@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Project</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+    <div class="container">
+        <div class="upper-bar">
+            <div class="buttons">
+                <button onclick="playGame('rock')" class="rock">
+                    <img src="images/rock_hand.svg" alt="">
+                    Rock
+                </button>
+                <button  onclick="playGame('paper')" class="paper">
+                    <img src="images/paper_hand.svg" alt="">
+                    Paper
+                </button>
+                <button onclick="playGame('scissors')" class="scissors">
+                    <img src="images/scissors_hand.svg" alt="">
+                    Scissors
+                </button>
+            </div>
+            <div class="result"></div>
+        </div>
+        <div class="game-container">
+            <div class="container-choice">
+                <h2>You</h2>
+                <img class="img" id="player-choice" src="images/player_choose.svg" alt="Your Choice">
+            </div>
+                <div class="versus">Versus</div>
+            <div class="container-choice">
+                <h2>computer</h2>
+                <img class="img" id="computer-choice" src="images/computer_random.svg" alt="">
+            </div>
+        </div>
+        <div class="match-history"></div>
+        <div class="reset-container"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
